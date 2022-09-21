@@ -1,12 +1,16 @@
-﻿// franek.h
+// franek.h
 
-#include "pch.h"
-#include "framework.h"
+
+#include <cstdlib>
+#include <cstdio>
+#include <ctime>
+
 #include <iostream>
 #include <string>
 #include <bitset>
 #include <climits>
 #include <cstdlib>
+
 
 using namespace std;
 
@@ -14,7 +18,7 @@ using namespace std;
 
 
 // funkcja szyfrujaca z kluczem o tej samej dlugosci 
-void szyfr()
+/*void szyfr()
 {
     srand(time(NULL));
 
@@ -31,5 +35,35 @@ void szyfr()
     cout << endl << "Oto twoj klucz: " << endl << x << endl;
 
 }
+*/
+void oceny()
+{
 
+float lol;
+float suma=0;
+int dlugosc;
+int n;
+cout<<"Podaj ilosc uczniow nie wieksza niz 50: "<<endl;
+cin>>n;
+float ocena[50];
+string nazwisko[50];
+for(int i=0;i<n;i++)
+{
+	cout<<"Podaj nazwisko i ocene ucznia:    ";
+	cin>>nazwisko[i]>>ocena[i];
+	suma = suma + ocena[i];
+	
+	
+}
+cout<<"Srednia arytmetyczna to:   "<<suma/n<<endl;;
+lol = ocena[0];
+for(int i=1;i<n;i++)
+{
 
+		if(lol<ocena [i])
+			lol = ocena[i];
+
+}
+cout<<"Najwieksza ocena to:   "<<lol<<endl;
+
+}
