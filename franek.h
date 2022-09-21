@@ -1,4 +1,4 @@
-// franek.h
+ď»ż// franek.h
 
 
 #include <cstdlib>
@@ -65,5 +65,12 @@ for(int i=1;i<n;i++)
 
 }
 cout<<"Najwieksza ocena to:   "<<lol<<endl;
+cout<< "A oto wszystkie oceny uczniow"<<endl;
+for(int i=0;i<n;i++)
+{
+	cout<<nazwisko[i]<<"   "<<ocena[i]<<endl;
+}
+
+
 
 }
