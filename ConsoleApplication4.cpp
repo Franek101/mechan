@@ -41,9 +41,24 @@ public:
 int main()
 {
     
-    samochod autko;
-    autko.wczytaj();
-    autko.wypisz();
+     samochod s1;
+    s1.wczytaj();
+    s1.wypisz();
+
+    samochod s2;
+    s2.wczytaj();
+    s2.wypisz();
+
+    if (s1.przebieg < s2.przebieg)
+    {
+        cout << "Przebieg " << s1.marka << " " << s1.model << " jest wiekszy" << endl;
+    }
+    else if (s1.przebieg > s2.przebieg)
+    {
+        cout << "Przebieg " << s2.marka << " " << s2.model << " jest wiekszy" << endl;
+    }
+    else cout << "Auta maja ten sam przebieg" << endl;
+
 
 }
 
