@@ -51,11 +51,11 @@ int main()
 
     if (s1.przebieg < s2.przebieg)
     {
-        cout << "Przebieg " << s1.marka << " " << s1.model << " jest wiekszy" << endl;
+        cout << "Przebieg " << s1.marka << " " << s1.model << " jest mniejszy" << endl;
     }
     else if (s1.przebieg > s2.przebieg)
     {
-        cout << "Przebieg " << s2.marka << " " << s2.model << " jest wiekszy" << endl;
+        cout << "Przebieg " << s2.marka << " " << s2.model << " jest mniejszy" << endl;
     }
     else cout << "Auta maja ten sam przebieg" << endl;
 
