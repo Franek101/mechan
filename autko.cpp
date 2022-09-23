@@ -1,6 +1,6 @@
-﻿
 #include <iostream>
 #include <string>
+#include <windows.h>
 
 using namespace std;
 
@@ -14,22 +14,24 @@ public:
 
     void wczytaj() 
     {
-        cout << "Dodawanie samochodu___________";
+        cout << "Dodawanie samochodu___________"<<endl;
         cout << endl << "Podaj marke samochodu:   ";
-        cin >> marka;
-        cout << endl << "Podaj model samochodu:   ";
-        cin >> model;
-        cout << endl << "Podaj rocznik samochodu:   ";
+        //cin.ignore();
+        getline(cin,marka);
+        cout << "Podaj model samochodu:   ";
+        //cin.ignore();
+        getline(cin,model);
+        cout <<  "Podaj rocznik samochodu:   ";
         cin >> rocznik;
-        cout << endl << "Podaj przebieg samochodu:   ";
+        cout <<  "Podaj przebieg samochodu:   ";
         cin >> przebieg;
-
-
+		system("cls");
     }
 
     void wypisz()
     {
-        cout << endl << endl << "________________________________________________" << endl << marka << "   " << model << "   " << rocznik << "   " << przebieg << endl;
+        cout << endl << endl << "________________________________________________" << endl << marka << "   " << model << "   " << rocznik << "   " << przebieg<<endl ;
+        cin.ignore();
     }
 
 
@@ -51,15 +53,13 @@ int main()
 
     if (s1.przebieg < s2.przebieg)
     {
-        cout << "Przebieg " << s1.marka << " " << s1.model << " jest mniejszy" << endl;
+        cout << endl<<endl<<"Przebieg " << s1.marka << " " << s1.model << " jest mniejszy" << endl;
     }
     else if (s1.przebieg > s2.przebieg)
     {
-        cout << "Przebieg " << s2.marka << " " << s2.model << " jest mniejszy" << endl;
+        cout <<endl<<endl<< "Przebieg " << s2.marka << " " << s2.model << " jest mniejszy" << endl;
     }
-    else cout << "Auta maja ten sam przebieg" << endl;
+    else cout <<endl<<endl<< "Auta maja ten sam przebieg" << endl;
 
 
 }
-
-
