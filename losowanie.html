@@ -1,0 +1,81 @@
+<html>
+    <head>
+    
+    
+    <script>
+        function losowanie()
+        {
+        var x;
+            var y = 0;
+        for(i=0;i<10;i++)
+        {
+            x = Math.floor(Math.random() * 10) + 1;
+            document.getElementById("pole"+i).innerHTML=x;
+            if(x>5)
+                {
+                    y=y+1;
+                    
+                }
+        }
+            if(y>5)
+                {
+                    document.getElementById("siemanko").innerHTML="Poprawnie";
+                }
+            else document.getElementById("siemanko").innerHTML="Niepoprawnie";
+            
+            
+        }
+        
+        </script>
+        
+        
+        
+        <style>
+        body
+            
+            {
+                background-color: black;
+                color:white;
+            }
+        
+        
+        </style>
+    </head>
+    
+    
+    <body onload="losowanie()">
+    <div id="pole0">
+        </div>
+        <div id="pole1">
+        </div>
+        <div id="pole2">
+        </div>
+        <div id="pole3">
+        </div>
+        <div id="pole4">
+        </div>
+        <div id="pole5">
+        </div>
+        <div id="pole6">
+        </div>
+        <div id="pole7">
+        </div>
+        <div id="pole8">
+        </div>
+        <div id="pole9">
+        </div>
+        
+        
+        <div id="siemanko">
+        
+        </div>
+    
+    
+    
+    </body>
+    
+    
+    
+    
+    
+</html>
