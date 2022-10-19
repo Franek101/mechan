@@ -1,0 +1,89 @@
+<html>
+    <head>
+    
+    
+    <script>
+       function srednia()
+        {
+            
+            let x=0;
+            let y=0;
+            var ok="";
+            var ok1="";
+            var suma=0;
+            
+            x = parseInt(document.getElementById("pole1").value);
+            y = parseInt(document.getElementById("pole2").value);
+            
+            
+            for(i=x;i<=y;i++)
+                {
+                   ok=ok+"<br>"+i ;
+                }
+            
+            
+             for(i=y;i>=x;i--)
+                {
+                   ok1=ok1+"<br>"+i ;
+                }
+            
+            
+            for(i=x;i<=y;i++)
+                {
+                   suma=parseInt(suma+i);
+                }
+            
+            
+            
+            
+            
+            document.getElementById("ajdi").innerHTML=ok;
+            document.getElementById("ajdi1").innerHTML=ok1;
+            document.getElementById("ajdi2").innerHTML=suma;
+        }
+        
+        
+        
+        
+        </script>
+        
+        
+        
+        <style>
+        body
+            
+            {
+                background-color: black;
+                color:white;
+            }
+        
+        
+        </style>
+    </head>
+    
+    
+    <body >
+ 
+    
+        <input type="text" id="pole1">
+        <input type="text" id="pole2">
+        <input value="srednia" type="button" onclick="srednia()">
+        
+        <div id="ajdi">
+        </div>
+        <br><br>
+            <div id="ajdi1">
+        </div>
+        <br><br>
+            <div id="ajdi2">
+        </div>
+        
+        
+    
+    </body>
+    
+    
+    
+    
+    
+</html>
