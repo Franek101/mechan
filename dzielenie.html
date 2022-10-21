@@ -1,0 +1,53 @@
+<html>
+
+
+<head>
+    <title>lol</title>
+    <meta charset="utf-8">
+    <script>
+    
+    function funkcja()
+        {
+             var x;
+             var y;
+             x=parseInt(document.getElementById("tekst").value);
+             y=parseInt(document.getElementById("tekst1").value);
+             var z;
+             z= x/y;
+             z= Math.floor(z);
+             document.getElementById("dzielenie").innerHTML=z;
+             document.getElementById("reszta").innerHTML=(x%y);
+            
+            
+            
+        }
+    
+    
+    </script>
+    
+    
+    </head>
+
+<body>
+    
+    
+    <input type="text" id="tekst">
+     <input type="text2" id="tekst1">
+    <input type="button" onclick="funkcja()" value="kliknij mnie">
+    
+    <div id="dzielenie">
+    
+    </div>
+    <div id="reszta">
+    
+    </div>
+    
+    </body>
+
+
+
+
+
+
+
+</html>
