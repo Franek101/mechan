@@ -1,0 +1,76 @@
+<html>
+<head lang="pl">
+    
+    <script>
+    
+    function f()
+        {
+            let y=0;
+             let x=0;
+             let s=0;
+             let suma=0;
+             let srednia=1;
+             let suma_wag=0;
+            
+            for(i=0;i<=4;i++)
+                {
+                    x = document.getElementById("pole"+i).value;
+                    y =parseInt( document.getElementById("waga"+i).value);
+                    s=parseInt(x*y);
+                    suma=parseInt(suma+(x*y));
+                    suma_wag=parseInt(suma_wag+y);
+                    
+                    
+                }
+            
+            srednia=suma/suma_wag;
+            
+            document.getElementById("siemanko").innerHTML = srednia;
+           
+            
+        }
+    
+    
+    
+    
+    </script>
+    
+    
+    
+    </head>
+
+
+<body>
+    
+    
+    
+   Podaj Ocene <input type="text" id="pole0">  Podaj wage <input type="text" id="waga0">
+    
+    <br>
+     Podaj Ocene <input type="text" id="pole1"> Podaj wage <input type="text" id="waga1">
+    <br>
+     Podaj Ocene <input type="text" id="pole2"> Podaj wage <input type="text" id="waga2">
+ <br>
+     Podaj Ocene <input type="text" id="pole3"> Podaj wage <input type="text" id="waga3">
+  <br>
+      Podaj Ocene<input type="text" id="pole4"> Podaj wage <input type="text" id="waga4">
+     <br>
+    <input type="button" id="przycisk" value="policz srednia" onclick="f()">
+    
+    
+    
+    <div id="siemanko">
+    
+    </div>
+   
+    
+    
+    </body>
+
+
+
+
+
+
+
+</html>
