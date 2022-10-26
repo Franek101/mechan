@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<title>Gwent Memory Test</title>
+	<meta name="description" content="BAZA">
+	<meta name="keywords" content="javascript, jQuery, game, gwent, memory">
+	<meta name="author" content="Czarny">
+	
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+	<style>
+    body
+{
+	margin: 0;
+	background-color: #FFFFF7;
+	background-image: url("img/pobrane.png");
+	color: #000000;
+    font-family: 'Lobster', sans-serif;
+    font-size: 28px;
+}
+
+a:link    { color: #AF001E; text-decoration: none; }
+a:visited { color: #AF001E; }
+a:active  { color: #AF001E; }
+a:hover   { color: #E9B64A; }
+
+
+
+
+h1
+{
+	font-size:64px;
+	font-weight: 400;
+	text-align:center;
+	letter-spacing: 5px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+p
+{
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 25px;
+	letter-spacing: 2px;
+}
+
+.board
+{
+	width:600px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	
+}
+
+.card
+{
+	width: 125px;
+	height: 125px;
+	display: inline-block;
+	margin: 3px;
+	background-image:url("img/rewers.png");
+	border: 4px solid #000000;
+	border-radius: 4px;
+	cursor: pointer;
+	filter: brightness(70%)
+}	
+
+.card:hover
+{
+	border: 4px solid #FFFFF7;
+	filter: brightness(100%)
+}
+    
+    
+    </style>
+	
+	<!--[if lt IE 9]>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+
+    <script>
+    
+    
+    
+    
+    </script>
+    
+    
+</head>
+
+    
+    
+    
+    
+<body>
+	
+	<header>
+	 <h1>Bazowana gra ziomeczku</h1>
+	 <p>Inspired by <a href="https://www.youtube.com/watch?v=j5y6xLpRwx4" target="_blank" > BAZA</a></p>
+	</header>
+	
+	<main>
+	 <article>
+	 <div class="board">
+		
+		<div class="card" id="c0"></div>
+		<div class="card" id="c1"></div>
+		<div class="card" id="c2"></div>
+		<div class="card" id="c3"></div>
+	
+		<div class="card" id="c4"></div>
+		<div class="card" id="c5"></div>
+		<div class="card" id="c6"></div>
+		<div class="card" id="c7"></div>
+		
+		<div class="card" id="c8"></div>
+		<div class="card" id="c9"></div>
+		<div class="card" id="c10"></div>
+		<div class="card" id="c11"></div>
+		
+		<div class="score">Turn counter: 0</div>
+		
+	 </div>
+	 </article>
+	</main>
+
+	
+
+	<script src="memory.js"></script>
+	
+</body>
+</html>
